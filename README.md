@@ -28,7 +28,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
@@ -40,63 +40,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[ThreatConnect](https://threatconnect.com/)**  
-
-  Threat intelligence platform with strong analyst workflow, intelligence lifecycle management, and native playbook/automation capabilities.
-
-
-
-- **[Anomali](https://www.anomali.com/)**  
-
-  Enterprise TIP focused on high-volume IOC management, automated feed ingestion, confidence scoring, and integration with SIEM/EDR/SOAR.
-
-
-
-- **[Cyware](https://www.cyware.com/)**  
-
-  Threat intelligence and security orchestration platform emphasizing sharing, collaboration, and automated operationalization of intelligence.
-
-
-
-- **[EclecticIQ](https://www.eclecticiq.com/)**  
-
-  Intelligence-driven security platform and TIP focused on structured intelligence management and analyst productivity.
-
-
-
-- **[OpenCTI Enterprise](https://filigran.io/)**  
-
-  Commercial enterprise edition of the OpenCTI platform, adding advanced features, support, and scalability options on top of the open-source core.
-
-
-
-- **[MISP Professional / Commercial Support](https://www.misp-project.org/)**  
-
-  Professional services, hosting, and support offerings built around the open-source MISP threat-sharing platform.
-
-
-
-- **[SOCRadar](https://socradar.io/)**  
-
-  Extended threat intelligence platform covering digital risk protection, dark-web monitoring, and operational intelligence.
-
-
-
-- **[Recorded Future](https://www.recordedfuture.com/)**  
-
-  Leading intelligence cloud that continuously collects and analyzes open, dark-web, and technical sources to deliver risk scores and curated intelligence.
-
-
-
-- **[Silent Push](https://www.silentpush.com/)**  
-
-  Threat intelligence platform specializing in infrastructure, domain, and related indicator intelligence for proactive defense.
-
-
-
-- **[ThreatQuotient (ThreatQ)](https://www.threatq.com/)**  
-
-  Threat intelligence platform centered on prioritization, scoring, and integrating intelligence into security operations workflows.
+| Platform / Product | Description / Focus | Starting Price (Pricing) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[ThreatConnect](https://threatconnect.com/)** | Threat intelligence platform with analyst workflows, intelligence lifecycle management, confidence scoring, and native SOAR automation. | Starts at ~$60,000/year (mid-market entry tier; typical enterprise range $60,000–$200,000+/year based on user seats, data volume, and SOAR/RQ modules) | No free-forever tier; offers a 30-day guided Proof of Concept (PoC) / evaluation sandbox upon sales qualification (scoped to test feeds and evaluation environment) |
+| **[Anomali](https://www.anomali.com/)** (ThreatStream) | Enterprise TIP focused on high-volume IOC management, automated multi-feed ingestion, confidence scoring, and SIEM/EDR/SOAR integration. | Starts at ~$50,000/year (mid-market entry tier; average enterprise contracts ~$93,000/year; scaling to $250,000–$500,000/year for global deployments) | No free-forever tier (legacy STAXX tool discontinued); provides a 30-day guided sales-assisted evaluation / PoC environment with limited test feed ingestion |
+| **[Cyware](https://www.cyware.com/)** (CTIX) | Cyber Threat Intelligence Exchange platform emphasizing automated ingestion, enrichment, bidirectional hub-and-spoke sharing, and SecOps orchestration. | Starts at ~$35,000/year (CTIX Lite / entry deployment; full enterprise multi-hub deployments scale $50,000–$150,000+/year) | No free-forever tier; offers a 14-to-30-day private Proof of Concept (PoC) trial via sales / AWS Marketplace Private Offer for scoped hub testing and integration validation |
+| **[EclecticIQ](https://www.eclecticiq.com/)** (Intelligence Center) | Intelligence-driven security platform and TIP built on STIX/TAXII standards, featuring analyst workbench tools and graph correlation. | Starts at ~$45,000/year (base tier for core Intelligence Center; enterprise packages range $60,000–$180,000+/year based on analyst seats and feed connectors) | No free-forever tier; offers time-limited 30-day integration "TIP Bundles" / evaluation trials for specific vendor integrations to validate operational impact |
+| **[OpenCTI Enterprise](https://filigran.io/)** (Filigran Cloud) | Commercial enterprise and managed SaaS edition of OpenCTI, adding automated playbooks, AI-assisted reporting, RBAC, and dedicated cloud hosting. | Starts at ~$12,000/year (~€10,000–€15,000/year for dedicated Cloud Standard / Medium instance; scales with compute/cluster resources) | **Community Edition** is 100% free forever (open-source Apache 2.0, self-hosted, full STIX 2.1 model); **Filigran Cloud Enterprise** offers a **30-day free trial** with access to all enterprise features, playbooks, and AI modules |
+| **[MISP Professional / Commercial Support](https://www.misp-project.org/)** | Commercial support contracts, SLA services, and dedicated managed cloud hosting built around the open-source MISP platform by MISP Project / CIRCL & partners. | Starts at ~€6,000/year (~$6,500/year for single-instance managed hosting and standard SLA support tier; enterprise multi-instance support €15,000–€35,000+/year) | MISP core is 100% free forever (AGPLv3 open-source, self-hosted, unlimited events/attributes/users); commercial hosting partners offer 14-day evaluation demo instances upon request |
+| **[SOCRadar](https://socradar.io/)** | Extended Threat Intelligence (XTI) platform combining cyber threat intelligence, digital risk protection, and external attack surface management. | Starts at $4,550/year (Advanced Dark Web module; comprehensive CTI & attack surface packages range $7,900–$11,950+/year) | **SOCRadar Free Edition** free for 12 months (1 year) with limits: 1 monitored corporate domain, up to 100 auto-discovered digital assets, basic dark web / exposed credential alerts, and critical zero-day vulnerability notifications |
+| **[Recorded Future](https://www.recordedfuture.com/)** | Leading intelligence cloud that continuously collects open, dark-web, and technical sources to deliver real-time risk scores and threat graph analytics. | Starts at ~$50,000/year (base core module/license; typical enterprise contracts range $50,000–$250,000+/year based on modules: SecOps, Brand, Vuln, Attack Surface) | No free-forever tier for full platform (free standalone browser extension and malware sandbox tools available); offers a **30-day free trial** for specific ecosystem integrations (e.g., Microsoft Sentinel integration) and guided 14-to-30-day evaluation PoC |
+| **[Silent Push](https://www.silentpush.com/)** | Threat intelligence platform specializing in global DNS/infrastructure analysis, domain reputation, and early adversary infrastructure detection. | Starts at ~$1,200/year ($100/month for Starter tier; Professional/Enterprise tiers scale $4,800–$25,000+/year based on query volume and API feeds) | **Free Community Edition** (free forever for non-production/eval use) limited to **1 user seat** and **250 query requests per month**; also offers a 14-day full-feature trial for Pro evaluation |
+| **[ThreatQuotient](https://threatq.com/)** (ThreatQ) | Threat intelligence platform centered on Threat Data Integrity, customizable prioritization scoring, and security operations workflow integration. | Starts at ~$40,000/year (base deployment tier; typical enterprise deployments scale $50,000–$150,000+/year based on analyst seats and connector volume) | No free-forever tier; provides a 30-day structured Proof of Concept (PoC) / sandbox evaluation through sales engineering and partner channels (e.g., Carahsoft) |
 
 
 
