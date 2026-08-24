@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Radar Sweep Gradient -->
+    <linearGradient id="radar-sweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 500;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+    .pulse-circle {
+      animation: pulseAnim 3s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .radar-beam {
+      animation: rotateRadar 7s linear infinite;
+      transform-origin: 1040px 170px;
+    }
+    .stream-line {
+      stroke-dasharray: 8 16;
+      animation: dashStream 5s linear infinite;
+    }
+    .glow-node {
+      animation: nodeGlow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes rotateRadar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulseAnim {
+      0% { transform: scale(0.95); opacity: 0.4; }
+      50% { transform: scale(1.08); opacity: 0.9; }
+      100% { transform: scale(0.95); opacity: 0.4; }
+    }
+    @keyframes dashStream {
+      to { stroke-dashoffset: -120; }
+    }
+    @keyframes nodeGlow {
+      0% { filter: drop-shadow(0 0 2px #38bdf8); opacity: 0.6; }
+      100% { filter: drop-shadow(0 0 10px #818cf8); opacity: 1; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="340" fill="url(#cyber-grid)" rx="16" />
+
+  <!-- Accent Glow -->
+  <circle cx="100" cy="40" r="180" fill="#38bdf8" fill-opacity="0.05" />
+  <circle cx="600" cy="300" r="220" fill="#818cf8" fill-opacity="0.05" />
+
+  <!-- Animated Threat Radar / Knowledge Graph Graphic -->
+  <g id="radar-system">
+    <circle cx="1040" cy="170" r="110" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" />
+    <circle cx="1040" cy="170" r="80" fill="none" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="1040" cy="170" r="50" fill="none" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="1040" cy="170" r="20" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    
+    <line x1="910" y1="170" x2="1170" y2="170" stroke="#334155" stroke-width="1" stroke-dasharray="2 2" />
+    <line x1="1040" y1="40" x2="1040" y2="300" stroke="#334155" stroke-width="1" stroke-dasharray="2 2" />
+
+    <!-- Dynamic Rotating Radar Sweep -->
+    <g class="radar-beam">
+      <path d="M 1040 170 L 1150 170 A 110 110 0 0 0 1118 92 Z" fill="url(#radar-sweep)" />
+    </g>
+
+    <!-- Center Pulse -->
+    <circle cx="1040" cy="170" r="8" fill="#38bdf8" class="pulse-circle" />
+
+    <!-- Graph Nodes -->
+    <line x1="1040" y1="170" x2="980" y2="100" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" class="stream-line" />
+    <circle cx="980" cy="100" r="7" fill="#0284c7" stroke="#38bdf8" stroke-width="2" class="glow-node" />
+    
+    <line x1="1040" y1="170" x2="1110" y2="110" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.6" class="stream-line" />
+    <circle cx="1110" cy="110" r="6" fill="#6366f1" stroke="#a5b4fc" stroke-width="2" class="glow-node" />
+
+    <line x1="1040" y1="170" x2="990" y2="240" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.6" class="stream-line" />
+    <circle cx="990" cy="240" r="6" fill="#9333ea" stroke="#e9d5ff" stroke-width="2" class="glow-node" />
+
+    <line x1="1040" y1="170" x2="1120" y2="230" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" class="stream-line" />
+    <circle cx="1120" cy="230" r="7" fill="#0ea5e9" stroke="#7dd3fc" stroke-width="2" class="glow-node" />
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(60, 52)">
+    <rect width="250" height="28" rx="14" fill="#0f2642" stroke="#0284c7" stroke-width="1" />
+    <circle cx="14" cy="14" r="5" fill="#38bdf8" class="pulse-circle" />
+    <text x="28" y="19" class="badge-text">CYBER THREAT INTEL (CTI)</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="132" class="title-text" font-size="38">
+    Awesome Threat Intelligence
+  </text>
+  <text x="60" y="176" class="title-text" font-size="38" fill="url(#accent-grad)">
+    Management (TIM) Platforms
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="222" class="subtitle-text" font-size="16">
+    Curated Hub of Category-Leading SaaS Platforms &amp; Open-Source Projects
+  </text>
+  <text x="60" y="248" class="subtitle-text" font-size="14" fill="#64748b">
+    IOC/TTP Management • Knowledge Graphs • STIX 2.1 / TAXII • Sharing &amp; Enrichment Workflows
+  </text>
+
+  <!-- Bottom Badges -->
+  <g transform="translate(60, 276)">
+    <rect x="0" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="14" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">🛡️ TIP Ecosystem</text>
+    
+    <rect x="142" y="0" width="150" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="154" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">⚡ STIX 2.1 &amp; TAXII</text>
+
+    <rect x="304" y="0" width="165" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="316" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">🌐 OpenCTI &amp; MISP</text>
+
+    <rect x="481" y="0" width="140" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="493" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">🔍 SOC Enrichment</text>
+  </g>
+</svg>
